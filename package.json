@@ -1,0 +1,29 @@
+{
+  "name": "test-idem",
+  "version": "1.0.0",
+  "description": "Тестовое задание для idem",
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrrita123/test-idem.git"
+  },
+  "author": "Margarita Fisun",
+  "devDependencies": {
+    "autoprefixer": "10.0.1",
+    "browser-sync": "2.26.12",
+    "del": "6.0.0",
+    "gulp": "4.0.2",
+    "gulp-csso": "4.0.1",
+    "gulp-postcss": "9.0.0",
+    "gulp-rename": "2.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5",
+    "postcss": "8.1.1",
+    "stylelint-config-htmlacademy": "0.1.4"
+  },
+  "dependencies": {}
+}
