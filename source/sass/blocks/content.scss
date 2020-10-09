@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .content {
+    margin-left: 13px;
+    margin-right: 12px;
+  }
+}

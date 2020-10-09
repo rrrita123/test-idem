@@ -1,0 +1,63 @@
+@media (min-width: $tablet) {
+  .person-data__list {
+    padding: 15px 0 0 15px;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 15px;
+  }
+
+  .person-data__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    list-style: none;
+    margin-bottom: 27px;
+
+    &::before {
+      content: "";
+      display: block;
+      overflow: hidden;
+      border-bottom: 1px dashed #000000;
+      flex-grow: 1;
+      order: 2;
+
+      width: 100%;
+      position: absolute;
+      z-index: 0;
+      bottom: 6px;
+    }
+  }
+
+  .person-data__value {
+    text-align: right;
+    order: 3;
+    width: 50%;
+
+    z-index: 1;
+  }
+
+  .person-data__field {
+    width: 50%;
+
+    z-index: 1;
+  }
+
+  .person-data__text {
+    position: relative;
+    background-color: #e3ebd3;
+    padding-right: 10px;
+
+    font-family: "Noto Sans", "Arial", sans-serif;
+    line-height: 19px;
+  }
+
+  .person-data__value .person-data__text {
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}

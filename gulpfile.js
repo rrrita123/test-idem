@@ -31,7 +31,8 @@ gulp.task('copy', function() { // копирование всех не отпи�
     'source/img/**',
     'source/*.ico',
     'source/css/normalize-min.css',
-    'source/*.html'
+    'source/*.html',
+    'source/js/*.js'
   ], {
     base: 'source' //путь
   })

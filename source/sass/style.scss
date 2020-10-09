@@ -1,3 +1,44 @@
+@import "fonts.scss";
+@import "mixin.scss";
+@import "blocks/header.scss";
+@import "blocks/content.scss";
+@import "blocks/block-grey.scss";
+@import "blocks/block-square.scss";
+@import "blocks/block.scss";
+@import "blocks/block-light-gray.scss";
+@import "blocks/main.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/block-green.scss";
+@import "blocks/block-orange.scss";
+@import "blocks/footer.scss";
+@import "blocks/person-data.scss";
+@import "blocks/dialog/pade-dialog.scss";
+@import "blocks/dialog/dialog.scss";
+@import "blocks/dialog/messages.scss";
+@import "blocks/dialog/svg-mask.scss";
+@import "blocks/dialog/form-message.scss";
+@import "blocks/dialog/button-from.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 body {
-  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
 }

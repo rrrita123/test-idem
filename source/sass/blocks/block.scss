@@ -1,0 +1,44 @@
+.block {
+  @extend%text-flex-end;
+  width: $width-2column;
+  min-height: 155px;
+  margin-bottom: 10px;
+
+  &__text {
+    margin: 0;
+  }
+
+  &--light-gray {
+    background-color: #e8ebed;
+  }
+
+  &--large {
+    width: 100%;
+  }
+
+  &--blue {
+    background-color: #90bce8;
+  }
+
+  &--yellow {
+    background-color: #febf26;
+  }
+
+  &--orange {
+    background-color: #ffaa87;
+  }
+
+  &--violet {
+    background-color: #c7abd4;
+  }
+
+  &--red {
+    background-color: #f55e62;
+  }
+}
+
+@media (min-width: $tablet) {
+  .block {
+    width: $width-3column;
+  }
+}

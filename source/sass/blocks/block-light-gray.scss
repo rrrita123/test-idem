@@ -1,0 +1,27 @@
+.block-light-gray {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  order: -2;
+}
+
+.block-light-gray .block:nth-child(2) { // отступ для IE
+  margin-right: 10px;
+}
+
+@media (min-width: $tablet) {
+  .block-light-gray .block--large {
+    order: 1;
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+
+  .block-light-gray .block--yellow {
+    order: 2;
+  }
+
+  .block-light-gray .block--blue { // отступ для IE
+    margin-left: 9px;
+  }
+}
+

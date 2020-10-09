@@ -1,0 +1,11 @@
+.pade-dialog {
+  margin-left: 13px;
+  margin-right: 12px;
+}
+
+@media (min-width: 651px) {
+  .pade-dialog {
+    margin: 0 auto;
+    max-width: 651px;
+  }
+}

@@ -1,0 +1,11 @@
+.block-grey {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 480px) {
+  .block-grey {
+    order: -2;
+  }
+}

@@ -1,0 +1,34 @@
+.dialog {
+  margin-top: 46px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  background-image: url("../img/background-dialog_1x.jpg");
+  background-color: #cecbcb;
+  background-repeat: no-repeat;
+
+
+  &__content {
+    padding-left: 17px;
+    padding-right: 12px;
+  }
+
+  &__scroll {
+    overflow-y: scroll;
+    padding-top: 41px;
+    max-height: 478px;
+  }
+}
+
+.dialog__content--form {
+  position: relative;
+  padding-left: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 0;
+    left: 0;
+  }
+}

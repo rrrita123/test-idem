@@ -1,0 +1,79 @@
+.messages {
+  display: flex;
+  margin-bottom: 20px;
+
+  &__avatar {
+    margin: 0;
+  }
+
+  &__img {
+    clip-path: url("#mask");
+  }
+
+  &__text {
+    position: relative;
+    align-self: flex-start;
+    display: inline-block;
+    padding: 12px 12px 10px 14px;
+    margin: 0;
+    max-width: 73%;
+
+    line-height: 24px;
+    background-color: #f1f3f5;
+    border-radius: 5px;
+  }
+
+  &__today {
+    padding: 0;
+    padding-bottom: 7px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 1px solid #dbdbdb;
+  }
+
+  &__date {
+    margin: 0 auto;
+    line-height: 24px;
+    padding: 0 20px;
+    margin-bottom: 14px;
+  }
+
+  &--user2 {
+    justify-content: flex-end;
+  }
+}
+
+.messages--user2 .messages__text {
+  order: -1;
+}
+
+.messages--user1 .messages__avatar {
+  margin-right: 12px;
+  height: 47px;
+}
+
+.messages--user2 .messages__avatar {
+  margin-left: 18px;
+  height: 47px;
+}
+
+.messages--user1 .messages__text::before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-top: 5px solid #f1f3f5;
+  border-right: 5px solid #f1f3f5;
+  top: 6px;
+  left: -10px;
+}
+
+.messages--user2 .messages__text::before {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+  border-left: 5px solid #f1f3f5;
+  border-top: 5px solid #f1f3f5;
+  top: 6px;
+  right: -10px;
+}

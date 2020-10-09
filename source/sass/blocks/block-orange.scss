@@ -1,0 +1,37 @@
+.block-orange {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-orange .block--large {
+  order: -3;
+}
+
+.block-orange .block--order {
+  order: -2;
+}
+
+.block-orange .block--violet {
+  order: -1;
+}
+
+.block-orange .block:nth-child(5) { // отступ для IE
+  margin-right: 10px;
+}
+
+@media (min-width: $tablet) {
+  .block-orange .block {
+    order: 0;
+  }
+
+  .block-orange .block--large {
+    flex-grow: 1;
+    margin-left: 10px;
+    width: 50%;
+  }
+
+  .block-orange .block:nth-child(5) { // отступ для IE
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize-min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  <title>Dialog</title>
+</head>
+<body class="pade-dialog">
+
+  <div class="svg-mask">
+    <svg width="45" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <defs>
+        <clipPath id="mask">
+          <path d="M23.5 0L45.8498 16.2381L37.313 42.5119H9.68705L1.15017 16.2381L23.5 0Z" fill="#C4C4C4"/>
+        </clipPath>
+      </defs>
+    </svg>
+  </div>
+
+  <section class="dialog">
+    <h1 class="visually-hidden">Окно чата</h1>
+    <div class="dialog__scroll">
+    <div class="dialog__content">
+      <div class="messages messages--user1">
+        <figure class="messages__avatar">
+          <img class="messages__img" src="img/user_1x.png" alt="Автор сообщения">
+        </figure>
+        <p class="messages__text">Это означает, что в Вашем доме, офисе, кабинете, мастерской хранятся ценности бóльшие, чем просто деньги или драгоценности, - культурные ценности. Произведения искусства, антиквариат, иные предметы коллекционирования – все это имущество, безусловно высокая стоимость которого.</p>
+      </div>
+
+      <div class="messages messages--user2">
+        <figure class="messages__avatar">
+          <img class="messages__img" src="img/user_1x.png" alt="Автор сообщения">
+        </figure>
+          <p class="messages__text">Это означает,</p>
+      </div>
+
+      <div class="messages messages--user1">
+        <figure class="messages__avatar">
+          <img class="messages__img" src="img/user_1x.png" alt="Автор сообщения">
+        </figure>
+          <p class="messages__text">доме, офисе, кабинете, мастерской</p>
+      </div>
+    </div>
+
+    <fieldset class="messages__today">
+      <legend class="messages__date">21 октября 2017</legend>
+      <div class="dialog__content">
+        <div class="messages messages--user2">
+          <figure class="messages__avatar">
+            <img class="messages__img" src="img/user_1x.png" alt="Автор сообщения">
+          </figure>
+            <p class="messages__text">Это означает,</p>
+        </div>
+
+        <div class="messages messages--user1">
+          <figure class="messages__avatar">
+            <img class="messages__img" src="img/user_1x.png" alt="Автор сообщения">
+          </figure>
+            <p class="messages__text">доме, офисе, кабинете, мастерской</p>
+        </div>
+      </div>
+      </fieldset>
+    </div>
+
+    <div class="dialog__content dialog__content--form">
+      <form class="form-message" action="/" method="post">
+        <textarea class="form-message__tetx" name="text-message" cols="30" rows="7"></textarea>
+        <button class="form-message__button button-from" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
